@@ -70,7 +70,6 @@ export default function LandingPage() {
             <span className="text-base font-bold gradient-text">SnapList AI</span>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/pricing" className="text-sm text-[var(--text-secondary)] hover:text-white transition-colors">Pricing</Link>
             {isSignedIn ? (
               /* Logged-in: show Go to Dashboard instead of Sign In */
               <Link href="/analyze">
@@ -134,12 +133,6 @@ export default function LandingPage() {
                 Start Free — No Card Required
                 <ArrowRight className="h-5 w-5" />
               </motion.button>
-            </Link>
-            <Link href="/report-card">
-              <button className="flex items-center gap-2 rounded-xl border border-[var(--border)] bg-transparent px-6 py-4 text-sm text-[var(--text-secondary)] hover:border-[var(--violet)] hover:text-white transition-all">
-                <Star className="h-4 w-4 text-[var(--amber)]" />
-                Grade my existing listing
-              </button>
             </Link>
           </div>
 
@@ -266,8 +259,6 @@ export default function LandingPage() {
             <span className="text-sm font-bold gradient-text">SnapList AI</span>
           </div>
           <div className="flex gap-6 text-xs text-[var(--text-muted)]">
-            <Link href="/pricing" className="hover:text-[var(--text-secondary)] transition-colors">Pricing</Link>
-            <Link href="/report-card" className="hover:text-[var(--text-secondary)] transition-colors">Report Card</Link>
             <Link href="/privacy-policy" className="hover:text-[var(--text-secondary)] transition-colors">Privacy Policy</Link>
           </div>
           <p className="text-xs text-[var(--text-muted)]">© 2025 SnapList AI. Built for resellers.</p>
